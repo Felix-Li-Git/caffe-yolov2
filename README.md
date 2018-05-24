@@ -43,3 +43,11 @@
 ## Results
 
 ![alt text](https://github.com/Serge3006/caffe-yolov2/blob/master/yolo_detection.png)
+
+## YOLOv2 Webcam
+
+You can also use the yolo_webcam.py script to run yolo on real time.
+
+python yolo_webcam.py yolo.prototxt ./caffemodel/yolo.caffemodel webcam
+
+In case you want to use it in video just change "webcam" for the route of your video.
