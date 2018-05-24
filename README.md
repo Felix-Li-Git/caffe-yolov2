@@ -26,12 +26,22 @@
 
 ## Usage
 
-### convert model
+1. create yolo.prototxt
 
-`cd examples/indoor/convert`
+   Use the yolo.prototxt provided in the folder, which correspond to the yolov2.cfg version of the darknet webpage.
 
-1. convert yolo.cfg to yolo.prototxt
-2. convert yolo weights to caffemodel
+2. Download the weights from the official darknet page. To work with the previous prototxt, download the YOLOv2 608x608 weights.
 
-`python convert_weights_to_caffemodel.py yolo.prototxt yolo.weights yolo.caffemodel`
+3. convert yolo weights to caffemodel
 
+   Use the convert_weights_to_caffemodel.py script:
+  
+   python convert_weights_to_caffemodel.py yolo.prototxt yolo.weights yolo.caffemodel
+
+4. Test the model on images using the yolo_detect.py script:
+   
+   python yolo_detect.py yolo.prototxt ./caffemodel/yolo.caffemodel ./images/img.jpg
+   
+## Results
+
+![alt text](https://raw.githubusercontent.com/Serge3006/caffe-yolov2/yolo_detection.png)
