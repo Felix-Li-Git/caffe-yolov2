@@ -46,8 +46,8 @@
 
 ## YOLOv2 Webcam
 
-You can also use the yolo_webcam.py script to run yolo on real time.
+You can also use the yolo_webcam.py script to run yolo on real time:
 
-python yolo_webcam.py yolo.prototxt ./caffemodel/yolo.caffemodel webcam
+   python yolo_webcam.py yolo.prototxt ./caffemodel/yolo.caffemodel webcam
 
 In case you want to use it in video just change "webcam" for the route of your video.
